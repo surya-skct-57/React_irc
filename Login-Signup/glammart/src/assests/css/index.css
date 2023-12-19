@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,800;1,100;1,200;1,300;1,400;1,600&display=swap');
+*{
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('../images/background-img2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.auth-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  /* background-color: #f5f5f5; */
+}
+
+.auth-form {
+  width: 400px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.597);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form h1{
+  position: relative;
+}
+
+.form h1::before{
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 155px;
+  width: 100px;
+  height: 3px;
+  text-align: center;
+  justify-content: center;
+  background-color: #ba3ebc;
+  transform: scaleX(0.6);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.form-group label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  padding-top: 20px;
+}
+
+.form-group input {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.form-group input:focus {
+  border-color: #ba3ebc;
+  outline: none;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  width: 95%;
+  padding: 10px;
+  border: none;
+  border-radius: 30px;
+  background-color: #ba3ebc;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.button:hover{
+  box-shadow: 0 0 5px rgba(186, 62, 188, 0.4);
+}
+
+.toggle-form {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.toggle-form span {
+  font-size: 20px;
+  color: #000000;
+}
+
+.toggle-form button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  width: min-content;
+  font-weight: 500;
+  font-size: 20px;
+  cursor: pointer;
+  width: 100px;
+  margin-left: 10px;
+  background-color: #e73aeaa5;
+}
+
+/* 
+@media screen and (max-width: 768px) {
+  .auth-form {
+    width: 90vw;
+  }
+} */
